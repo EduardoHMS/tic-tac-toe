@@ -10,10 +10,17 @@
 <body>
     <div class="game"></div>
 
+    <div class="btn">
+        <input type="button" value="START" onclick="Comecar()">
+        <input type="button" value="RESTART" onclick="Comecar()">
+    </div>
+
     <script src="js/tic-tac-toe.js"></script>
     <script>
         tic_tac_toe.init(document.querySelector('.game'))
-        tic_tac_toe.start();
+        function Comecar(){
+            tic_tac_toe.start();
+        }
     </script>
 </body>
 </html>
